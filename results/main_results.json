@@ -1,0 +1,941 @@
+{
+  "scope": "One LIBERO-Spatial task; one training seed; eight shared initial states per checkpoint. Not a full benchmark.",
+  "results": [
+    {
+      "model": "500m",
+      "updates": 500,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.24736328877718688,
+      "model_forward_latency_ms": 50.918450113385916,
+      "action_generation_per_second": 157.11397307234387,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 462083000,
+      "policy_file_bytes": 924334435,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 3441000448,
+        "mps_allocated_bytes": 987846912,
+        "mps_driver_bytes": 1997324288
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 7.676870041992515
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 7.221765374997631
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 7.266512708039954
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 98,
+          "replans": 13,
+          "seconds": 3.31529654096812
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 94,
+          "replans": 12,
+          "seconds": 3.106879875063896
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 7.204946750076488
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 94,
+          "replans": 12,
+          "seconds": 3.135007416130975
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 120,
+          "replans": 15,
+          "seconds": 4.011224625166506
+        }
+      ],
+      "successes": 4,
+      "episodes": 8
+    },
+    {
+      "model": "500m",
+      "updates": 1000,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.22177667270845441,
+      "model_forward_latency_ms": 50.82949581556022,
+      "action_generation_per_second": 157.38893080955947,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 462083000,
+      "policy_file_bytes": 924334499,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 3456417792,
+        "mps_allocated_bytes": 987846912,
+        "mps_driver_bytes": 1996275712
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 90,
+          "replans": 12,
+          "seconds": 3.242572790943086
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 88,
+          "replans": 11,
+          "seconds": 2.925918374909088
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 7.2512314999476075
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 92,
+          "replans": 12,
+          "seconds": 3.086672459030524
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 87,
+          "replans": 11,
+          "seconds": 2.9061653329990804
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 87,
+          "replans": 11,
+          "seconds": 2.9021362911444157
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 91,
+          "replans": 12,
+          "seconds": 3.1427321669179946
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 92,
+          "replans": 12,
+          "seconds": 3.1387245419900864
+        }
+      ],
+      "successes": 7,
+      "episodes": 8
+    },
+    {
+      "model": "500m",
+      "updates": 2000,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.19382546585096452,
+      "model_forward_latency_ms": 50.943845976144075,
+      "action_generation_per_second": 157.0356506602629,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 462083000,
+      "policy_file_bytes": 924334499,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 3487629312,
+        "mps_allocated_bytes": 990992640,
+        "mps_driver_bytes": 1993146368
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 86,
+          "replans": 11,
+          "seconds": 3.0869926661252975
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 89,
+          "replans": 12,
+          "seconds": 3.0680305000860244
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 7.212388041894883
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 78,
+          "replans": 10,
+          "seconds": 2.6439387078862637
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 79,
+          "replans": 10,
+          "seconds": 2.6475850420538336
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 84,
+          "replans": 11,
+          "seconds": 2.8159310000482947
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 85,
+          "replans": 11,
+          "seconds": 2.9443151250015944
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 86,
+          "replans": 11,
+          "seconds": 2.9210267080925405
+        }
+      ],
+      "successes": 7,
+      "episodes": 8
+    },
+    {
+      "model": "1b",
+      "updates": 500,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.2444483404778327,
+      "model_forward_latency_ms": 77.20237071625888,
+      "action_generation_per_second": 103.62376084799678,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 1002860600,
+      "policy_file_bytes": 2006060822,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 4183343104,
+        "mps_allocated_bytes": 2083358976,
+        "mps_driver_bytes": 3872194560
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 137,
+          "replans": 18,
+          "seconds": 5.881954083219171
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 84,
+          "replans": 11,
+          "seconds": 3.181021959055215
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 8.125544541049749
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 104,
+          "replans": 13,
+          "seconds": 3.901171874953434
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 137,
+          "replans": 18,
+          "seconds": 5.2728365829680115
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 107,
+          "replans": 14,
+          "seconds": 4.1106934999115765
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 146,
+          "replans": 19,
+          "seconds": 5.5851244169753045
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 129,
+          "replans": 17,
+          "seconds": 4.961903916904703
+        }
+      ],
+      "successes": 7,
+      "episodes": 8
+    },
+    {
+      "model": "1b",
+      "updates": 1000,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.22397507059929975,
+      "model_forward_latency_ms": 77.12751659564674,
+      "action_generation_per_second": 103.72433021461421,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 1002860600,
+      "policy_file_bytes": 2006060886,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 4442619904,
+        "mps_allocated_bytes": 2080213248,
+        "mps_driver_bytes": 3876372480
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 81,
+          "replans": 11,
+          "seconds": 3.5581336659379303
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 8.070507917087525
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 7.908064875053242
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 84,
+          "replans": 11,
+          "seconds": 3.1446283750701696
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 83,
+          "replans": 11,
+          "seconds": 3.14014570787549
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 96,
+          "replans": 12,
+          "seconds": 3.5871242079883814
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 82,
+          "replans": 11,
+          "seconds": 3.11735558276996
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 88,
+          "replans": 11,
+          "seconds": 3.257295791991055
+        }
+      ],
+      "successes": 6,
+      "episodes": 8
+    },
+    {
+      "model": "1b",
+      "updates": 2000,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.19326426583044168,
+      "model_forward_latency_ms": 77.20912098884583,
+      "action_generation_per_second": 103.61470118479572,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 1002860600,
+      "policy_file_bytes": 2006060886,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 4436639744,
+        "mps_allocated_bytes": 2064484608,
+        "mps_driver_bytes": 3939287040
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 89,
+          "replans": 12,
+          "seconds": 3.7775440418627113
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 90,
+          "replans": 12,
+          "seconds": 3.4585376251488924
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 7.954050125088543
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 80,
+          "replans": 10,
+          "seconds": 2.9275244169402868
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 79,
+          "replans": 10,
+          "seconds": 2.919822874944657
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 84,
+          "replans": 11,
+          "seconds": 3.160423792200163
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 79,
+          "replans": 10,
+          "seconds": 2.9497443751897663
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 81,
+          "replans": 11,
+          "seconds": 3.0992890000343323
+        }
+      ],
+      "successes": 7,
+      "episodes": 8
+    },
+    {
+      "model": "2b",
+      "updates": 500,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.24815781943339416,
+      "model_forward_latency_ms": 125.12890417128803,
+      "action_generation_per_second": 63.93406905449167,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 1995924920,
+      "policy_file_bytes": 3992506357,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 7237779456,
+        "mps_allocated_bytes": 4088043776,
+        "mps_driver_bytes": 5990301696
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 10.051855000201613
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 9.519896749872714
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 9.420377834001556
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 103,
+          "replans": 13,
+          "seconds": 4.4622425409033895
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 100,
+          "replans": 13,
+          "seconds": 4.384063667152077
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 131,
+          "replans": 17,
+          "seconds": 5.782607499975711
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 108,
+          "replans": 14,
+          "seconds": 4.7724447499495
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 105,
+          "replans": 14,
+          "seconds": 4.702017500065267
+        }
+      ],
+      "successes": 5,
+      "episodes": 8
+    },
+    {
+      "model": "2b",
+      "updates": 1000,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.22345977613878487,
+      "model_forward_latency_ms": 124.7622708324343,
+      "action_generation_per_second": 64.12194926096399,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 1995924920,
+      "policy_file_bytes": 3992506421,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 6374031360,
+        "mps_allocated_bytes": 4094335232,
+        "mps_driver_bytes": 5989253120
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 86,
+          "replans": 11,
+          "seconds": 4.615942667005584
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 103,
+          "replans": 13,
+          "seconds": 4.420727125136182
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 9.430275958962739
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 91,
+          "replans": 12,
+          "seconds": 4.030748083023354
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 88,
+          "replans": 11,
+          "seconds": 3.777418917044997
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 95,
+          "replans": 12,
+          "seconds": 4.1031675830017775
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 89,
+          "replans": 12,
+          "seconds": 3.996746415970847
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 88,
+          "replans": 11,
+          "seconds": 3.7612764998339117
+        }
+      ],
+      "successes": 7,
+      "episodes": 8
+    },
+    {
+      "model": "2b",
+      "updates": 2000,
+      "strategy": "both",
+      "device": "mps",
+      "dtype": "bf16",
+      "val_samples": 80,
+      "validation_l1": 0.1945885465809362,
+      "model_forward_latency_ms": 125.5550789879635,
+      "action_generation_per_second": 63.717056008279286,
+      "timing_scope": "batch1,2 views; warm forward only; excludes preprocessing and simulation",
+      "deployment_parameters": 1995924920,
+      "policy_file_bytes": 3992506421,
+      "adapters_removed": true,
+      "sampled_peak_memory": {
+        "rss_bytes": 7118880768,
+        "mps_allocated_bytes": 4094335232,
+        "mps_driver_bytes": 5990301696
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "seed": 17,
+          "initial_state_index": 0,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 91,
+          "replans": 12,
+          "seconds": 4.930731916101649
+        },
+        {
+          "episode": 1,
+          "seed": 17,
+          "initial_state_index": 1,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 87,
+          "replans": 11,
+          "seconds": 3.8092166669666767
+        },
+        {
+          "episode": 2,
+          "seed": 17,
+          "initial_state_index": 2,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": false,
+          "steps": 220,
+          "replans": 28,
+          "seconds": 9.281150875147432
+        },
+        {
+          "episode": 3,
+          "seed": 17,
+          "initial_state_index": 3,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 88,
+          "replans": 11,
+          "seconds": 3.7877946249209344
+        },
+        {
+          "episode": 4,
+          "seed": 17,
+          "initial_state_index": 4,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 81,
+          "replans": 11,
+          "seconds": 3.661965750157833
+        },
+        {
+          "episode": 5,
+          "seed": 17,
+          "initial_state_index": 5,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 89,
+          "replans": 12,
+          "seconds": 4.050518917152658
+        },
+        {
+          "episode": 6,
+          "seed": 17,
+          "initial_state_index": 6,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 81,
+          "replans": 11,
+          "seconds": 3.6501288327854127
+        },
+        {
+          "episode": 7,
+          "seed": 17,
+          "initial_state_index": 7,
+          "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+          "success": true,
+          "steps": 86,
+          "replans": 11,
+          "seconds": 3.7683755841571838
+        }
+      ],
+      "successes": 7,
+      "episodes": 8
+    }
+  ]
+}
